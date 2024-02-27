@@ -13,9 +13,15 @@ export default function Header() {
           <button>Search</button>
         </form>
         <div className="flex">
-          <p>Home</p>
-          <p>About</p>
-          <p>Sign In</p>
+          <Link to="/">
+            <p>Home</p>
+          </Link>
+          <Link to="/about">
+            <p>About</p>
+          </Link>
+          <Link to="/login">
+            <p>Login</p>
+          </Link>
         </div>
       </header>
     </>
